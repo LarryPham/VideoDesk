@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Attributes for Floatable EditText -->
+    <declare-styleable name="FloatLabeledEdiText">
+        <attr name="flextTextAppearance" format="reference"/>
+        <attr name="flextPadding" format="reference|dimension"/>
+        <attr name="flextPaddingLeft" format="reference|dimension"/>
+        <attr name="flextPaddingRight" format="reference|dimension"/>
+        <attr name="flextPaddingTop" format="reference|dimension"/>
+        <attr name="flextPaddingBottom" format="reference|dimension"/>
+    </declare-styleable>
+    <!-- Drawer LinearLayout -->
+    <declare-styleable name="LinearListView">
+        <attr name="android:entries"/>
+        <attr name="dividerThickness" format="dimension"/>
+    </declare-styleable>
+    <!--Attributes for DrawerShadowFrameLayout -->
+    <declare-styleable name="DrawerShadowFrameLayout">
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowVisible" format="boolean" />
+    </declare-styleable>
+    <!-- Scrim Insets View attribute set-->
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="insetForeground" format="reference|color"/>
+    </declare-styleable>
+    <declare-styleable name="VideoDeskTheme">
+        <attr name="isFloatingWindow" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="BaseTheme">
+        <attr name="actionBarIconColor" format="color"/>
+        <attr name="actionBarInsetStart" format="dimension"/>
+        <attr name="spinnerInsetStart" format="dimension"/>
+        <attr name="popupItemBackground" format="reference"/>
+        <attr name="photoItemForeground" format="reference"/>
+        <attr name="photoItemForegroundBorderless" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color|reference"/>
+        <attr name="fab_colorNormal" format="color|reference"/>
+        <attr name="fab_colorRipple" format="color|reference"/>
+        <attr name="fab_shadow" format="boolean|reference"/>
+        <attr name="fab_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!-- Main Layout-->
+    <com.techiedb.app.videodesk.widgets.DrawerShadowFrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <com.techiedb.app.videodesk.widgets.drawers.DrawerView
+            android:id="@+id/drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+
+        </com.techiedb.app.videodesk.widgets.drawers.DrawerView>
+    </com.techiedb.app.videodesk.widgets.DrawerShadowFrameLayout>
+</DrawerLayout>
