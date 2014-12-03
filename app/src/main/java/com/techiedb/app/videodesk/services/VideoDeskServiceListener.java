@@ -1,5 +1,12 @@
 package com.techiedb.app.videodesk.services;
 
+import android.media.videoeditor.AudioTrack;
+import android.media.videoeditor.MediaItem;
+
+import com.techiedb.app.videodesk.models.DeskProject;
+
+import java.util.List;
+
 /**
  * Copyright (C) 2014 Adways Vietnam Inc. All rights reserved.
  * Mobile UX Promotion Division.
@@ -18,4 +25,59 @@ package com.techiedb.app.videodesk.services;
  * @since December.03.2014
  */
 public class VideoDeskServiceListener {
+
+    /**
+     * List of projects was loaded
+     * @param projects The array of projects
+     * @param exception The exception
+     */
+    public void onProjectsLoaded(List<DeskProject> projects, Exception exception){
+
+    }
+
+    /**
+     * A new project was created
+     * @param projectPath The project path
+     * @param projectEdited true if the project is edited
+     */
+    public void onProjectEditState(String projectPath, boolean projectEdited){
+
+    }
+
+    /**
+     * A new project was created
+     * @param projectPath The project path
+     * @param project The VideoDesk project
+     * @param mediaItems The list of media items
+     * @param audioTracks The list of audio tracks
+     * @param exception The exception that occurred
+     */
+    public void onVideoEditorCreated(String projectPath, DeskProject project, List<MediaItem> mediaItems,
+                                     List<AudioTrack> audioTracks, Exception exception){
+
+    }
+
+    /**
+     * The aspect ratio was set
+     * @param projectPath The project path
+     * @param aspectRatio The aspect ratio
+     * @param exception The exception that occurred
+     */
+    public void onVideoEditorAspectRatioSet(String projectPath, int aspectRatio, Exception exception){
+
+    }
+
+    /**
+     * The specified theme was applied
+     * @param projectPath The project path
+     * @param theme The theme
+     * @param ex The exception that occurred
+     */
+    public void onVideoEditorThemeApplied(String projectPath, String theme, Exception ex){
+
+    }
+
+    public void onVideoEditorExportCanceled(String projectPath, String fileName){
+
+    }
 }
