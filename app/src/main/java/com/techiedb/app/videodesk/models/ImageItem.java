@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.os.Parcel;
 
 import com.techiedb.app.videodesk.services.loaders.ThreadPool;
-import com.techiedb.app.videodesk.utils.MediaUtils;
+import com.techiedb.app.videodesk.utils.MediaItemUtils;
 
 /**
  * Copyright (C) 2014 Adways Vietnam Inc . All rights reserved.
@@ -38,8 +38,8 @@ public class ImageItem extends MediaItem {
     public ImageItem(Cursor cursor) {
         super(cursor);
 
-        this.mOrientation = cursor.getInt(MediaUtils.COL_ORIENTATION);
-        this.mThumbnailOrientation = cursor.getInt(MediaUtils.COL_ORIENTATION);
+        this.mOrientation = cursor.getInt(MediaItemUtils.COL_ORIENTATION);
+        this.mThumbnailOrientation = cursor.getInt(MediaItemUtils.COL_ORIENTATION);
     }
 
     /**
